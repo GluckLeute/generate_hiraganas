@@ -31,7 +31,7 @@ fn main() {
                 result.push(*all_words.choose(&mut rand::rng()).unwrap());
         }
         }
-        let output = result.into_iter().collect::<String>();
+        let output: String = result.into_iter().collect();
         println!("{}", output);
     }
 }
